@@ -21,7 +21,7 @@ input.addEventListener('keypress', event => {
           input.value = ""
           writeOut()
           para1.textContent = `points: ${points}`
-          para2.textContent = `words: ${words}. `
+          para2.textContent = `words: ${words}`
 
           localStorage.setItem('words', words)
           localStorage.setItem('points', points)
@@ -53,7 +53,7 @@ function writeOut(){
 
   previousWords.forEach(word => {
   para1.textContent = `points: ${points}`
-  para2.textContent = `words: ${words} `
+  para2.textContent = `words: ${words}`
   para.innerHTML = `${word}<br>`
   box.appendChild(para)
 });
