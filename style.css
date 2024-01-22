@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Dodanie stylów dla elementów korzystających z czcionki Poppins */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0px;
+
+}
+
+
+.flex-wrapper{
+    overflow: hidden;
+    flex-direction: column;
+    background: linear-gradient(135deg, #001e32, #003972c9);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    height: 600px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+   .card{
+    width: 300px;
+    text-align: 1em;
+   }
+
+  }
+
+.card input{
+    
+    border-radius: 15px;
+    width: 80%;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.card input:focus{
+    outline:none ;
+}
+
+.box{
+    gap: 2px;
+    font-size: 2em;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    overflow-y: auto;
+    height: 50%;
+    width: 80%;
+    background-color: rgb(248, 245, 245);
+}
+
+.stats{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.statsamt{
+    font-size: 1em;
+    font-weight: bolder;
+}
