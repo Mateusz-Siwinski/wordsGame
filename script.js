@@ -12,9 +12,9 @@ const input = document.querySelector('#textInput')
 input.addEventListener('keypress', event => {
   if (event.key === "Enter") {
     if (input.value.length > 1 && input.value.length < 15) {
-      if (index.includes(input.value.toString().replace(/[^a-zA-Z]/g, '').toLowerCase()) === true) {
+      if (index.includes(input.value.toString().toLowerCase()) === true) {
         if (!previousWords.includes(input.value.toString().toLowerCase())) {
-          previousWords.push(input.value.toString().toLowerCase())
+          previousWords.push(input.value.toString().toLowerCase().replace(/[^a-zA-Z]/g, ''))
           points+= 300 * input.value.length
           words++
           input.style.backgroundColor = "green"
