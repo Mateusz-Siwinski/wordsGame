@@ -12,7 +12,7 @@ body {
 
 
 .flex-wrapper{
-    overflow: hidden;
+    overflow-x: hidden;
     flex-direction: column;
     background: linear-gradient(135deg, #001e32, #003972c9);
     height: 100vh;
